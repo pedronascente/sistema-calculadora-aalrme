@@ -1,0 +1,302 @@
+.full-width {
+    width: 100%
+}
+
+.table {
+    display: table
+}
+
+.table-row {
+    display: table-row
+}
+
+.table-cell {
+    display: table-cell
+}
+
+.table-cell.middle {
+    vertical-align: middle
+}
+
+.eds .informacion .table-cell {
+    width: 25%
+}
+
+.inline-block {
+    display: inline-block
+}
+
+.center {
+    text-align: center
+}
+
+.align-right {
+    text-align: right
+}
+
+.upper {
+    text-transform: uppercase
+}
+
+.red {
+    color: #f03
+}
+
+.higher {
+    font-size: 1.5em !important
+}
+
+.bold {
+    font-weight: 700 !important
+}
+
+.notbold {
+    font-weight: initial !important
+}
+
+.dashed:after,
+.dashed:before {
+    content: ' ';
+    width: 90%;
+    display: block;
+    position: relative;
+    border: 4px solid #f03;
+    height: 12px;
+    margin: 0 auto
+}
+
+.dashed:after {
+    border-top: none;
+    margin-top: 26px
+}
+
+.dashed:before {
+    border-bottom: none;
+    margin-bottom: 26px
+}
+
+.lowercase {
+    text-transform: lowercase
+}
+
+#app-container #slides article h2 {
+    margin: 30px auto .5em;
+    font-family: firasansregular
+}
+
+#app-container #slides article h3 {
+    margin: 0 auto 1.5em
+}
+
+article.eds {
+    margin-bottom: 45px !important
+}
+
+article.eds .wrapper {
+    width: 90%;
+    max-width: 790px;
+    margin: 0 auto
+}
+
+article .thanks-bg {
+    background-image: url(../images/eds/bg_image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    min-height: 267px;
+    height: 267px
+}
+
+.thanks h2 {
+    font-size: 3em !important;
+    text-transform: uppercase;
+    color: #fff !important;
+    padding: 0 !important;
+    margin: 0 !important
+}
+
+.thanks h3 {
+    font-size: 1.5em !important;
+    color: #fff !important;
+    font-weight: initial;
+    margin: 0 !important
+}
+
+.completado h2 {
+    font-weight: 700 !important;
+    font-size: 1.5em !important
+}
+
+.completado p {
+    padding: 0 !important;
+    line-height: 1.5em
+}
+
+.user-data.dashed {
+    margin-top: 60px !important
+}
+
+.user-data h2 {
+    margin-top: 0 !important;
+    margin-bottom: .5em !important
+}
+
+.user-data h3 {
+    margin-top: 0 !important
+}
+
+.table-cell {
+    padding: 6px 0
+}
+
+.input-label {
+    color: #aaa
+}
+
+.input-label span {
+    width: 92%;
+    display: block;
+    margin: 0 auto;
+    font-size: .8em
+}
+
+.input input {
+    padding: 6px;
+    border: 1px solid #000;
+    width: 92%;
+    font-size: .8em
+}
+
+.security.eds {
+    border-top: 1px solid #e5e5e5;
+    margin-top: 30px !important
+}
+
+.security h2 {
+    font-size: 1.2em !important;
+    margin-bottom: 0 !important
+}
+
+.security h3 {
+    font-size: 1em !important;
+    margin-top: 8px !important;
+    color: #aaa
+}
+
+.home {
+    float: left;
+    opacity: .9
+}
+
+.home_big {
+    display: none
+}
+
+.advices {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.advices-list {
+    float: right;
+    width: 45%;
+    font-size: .9em;
+    padding-top: 0;
+    padding-right: 30px;
+    color: #393939
+}
+
+.advices-list ul {
+    list-style: none;
+    padding-left: 0
+}
+
+.advices-list ul li {
+    line-height: 1.6em;
+    margin-top: 27px
+}
+
+.first-advice {
+    background-image: url(../images/calculando/ico_1.png);
+    background-repeat: no-repeat;
+    padding-left: 35px
+}
+
+.second-advice {
+    background-image: url(../images/calculando/ico_2.png);
+    background-repeat: no-repeat;
+    padding-left: 35px
+}
+
+.third-advice {
+    background-image: url(../images/calculando/ico_3.png);
+    background-repeat: no-repeat;
+    padding-left: 35px
+}
+
+.fourth-advice {
+    background-image: url(../images/calculando/ico_4.png);
+    background-repeat: no-repeat;
+    padding-left: 35px
+}
+
+.burglars img {
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    max-width: 100%
+}
+
+.burglars p {
+    padding: initial !important;
+    line-height: 24px
+}
+
+@media screen and (max-width:992px) {
+    body {
+        font-size: .7em
+    }
+
+    article .thanks-bg {
+        min-height: 186px;
+        height: 186px
+    }
+
+    .completado img {
+        max-width: 76px
+    }
+
+    .security .home {
+        display: none
+    }
+
+    .security .home_big {
+        display: block;
+        position: relative;
+        float: none;
+        width: 100%
+    }
+
+    .security .home_big {
+        display: block
+    }
+
+    .security .advices-list {
+        width: 100%;
+        float: none;
+        padding: 0;
+        position: relative;
+        display: block
+    }
+
+    .security .advices-list ul li {
+        margin: 15px;
+        line-height: 2.2em
+    }
+}
+
+#app-container #slides article {
+    display: inline-block;
+    position: relative
+}

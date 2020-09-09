@@ -1,0 +1,543 @@
+@font-face {
+    font-family: fontawesome;
+    src: url(../fonts/fontawesome-webfont.eot?v=4.7.0);
+    src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(../fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'), url(../fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'), url(../fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'), url(../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: firasanslight;
+    src: url(fonts/fira-sans/FiraSansLight.eot);
+    src: url(fonts/fira-sans/FiraSansLight.eot) format('embedded-opentype'), url(fonts/fira-sans/FiraSansLight.woff2) format('woff2'), url(fonts/fira-sans/FiraSansLight.woff) format('woff'), url(fonts/fira-sans/FiraSansLight.ttf) format('truetype'), url(fonts/fira-sans/FiraSansLight.svg#FiraSansLight) format('svg')
+}
+
+@font-face {
+    font-family: firasansbold;
+    src: url(fonts/fira-sans/FiraSansBold.eot);
+    src: url(fonts/fira-sans/FiraSansBold.eot) format('embedded-opentype'), url(fonts/fira-sans/FiraSansBold.woff2) format('woff2'), url(fonts/fira-sans/FiraSansBold.woff) format('woff'), url(fonts/fira-sans/FiraSansBold.ttf) format('truetype'), url(fonts/fira-sans/FiraSansBold.svg#FiraSansBold) format('svg')
+}
+
+@font-face {
+    font-family: firasansmedium;
+    src: url(fonts/fira-sans/FiraSansMedium.eot);
+    src: url(fonts/fira-sans/FiraSansMedium.eot) format('embedded-opentype'), url(fonts/fira-sans/FiraSansMedium.woff2) format('woff2'), url(fonts/fira-sans/FiraSansMedium.woff) format('woff'), url(fonts/fira-sans/FiraSansMedium.ttf) format('truetype'), url(fonts/fira-sans/FiraSansMedium.svg#FiraSansMedium) format('svg')
+}
+
+@font-face {
+    font-family: firasansregular;
+    src: url(fonts/fira-sans/FiraSansRegular.eot);
+    src: url(fonts/fira-sans/FiraSansRegular.eot) format('embedded-opentype'), url(fonts/fira-sans/FiraSansRegular.woff2) format('woff2'), url(fonts/fira-sans/FiraSansRegular.woff) format('woff'), url(fonts/fira-sans/FiraSansRegular.ttf) format('truetype'), url(fonts/fira-sans/FiraSansRegular.svg#FiraSansRegular) format('svg')
+}
+
+@font-face {
+    font-family: pt_serifwebregular;
+    src: url(fonts/pt-sans/PT_SerifWebRegular.eot);
+    src: url(fonts/pt-sans/PT_SerifWebRegular.eot) format('embedded-opentype'), url(fonts/pt-sans/PT_SerifWebRegular.woff2) format('woff2'), url(fonts/pt-sans/PT_SerifWebRegular.woff) format('woff'), url(fonts/pt-sans/PT_SerifWebRegular.ttf) format('truetype'), url(fonts/pt-sans/PT_SerifWebRegular.svg#PT_SerifWebRegular) format('svg')
+}
+
+@font-face {
+    font-family: pt_serifwebbold;
+    src: url(fonts/pt-sans/PT_SerifWebBold.eot);
+    src: url(fonts/pt-sans/PT_SerifWebBold.eot) format('embedded-opentype'), url(fonts/pt-sans/PT_SerifWebBold.woff2) format('woff2'), url(fonts/pt-sans/PT_SerifWebBold.woff) format('woff'), url(fonts/pt-sans/PT_SerifWebBold.ttf) format('truetype'), url(fonts/pt-sans/PT_SerifWebBold.svg#PT_SerifWebBold) format('svg')
+}
+
+@font-face {
+    font-family: pt_serifwebbolditalic;
+    src: url(fonts/pt-sans/PT_SerifWebBoldItalic.eot);
+    src: url(fonts/pt-sans/PT_SerifWebBoldItalic.eot) format('embedded-opentype'), url(fonts/pt-sans/PT_SerifWebBoldItalic.woff2) format('woff2'), url(fonts/pt-sans/PT_SerifWebBoldItalic.woff) format('woff'), url(fonts/pt-sans/PT_SerifWebBoldItalic.ttf) format('truetype'), url(fonts/pt-sans/PT_SerifWebBoldItalic.svg#PT_SerifWebBoldItalic) format('svg')
+}
+
+@font-face {
+    font-family: pt_serifwebitalic;
+    src: url(fonts/pt-sans/PT_SerifWebItalic.eot);
+    src: url(fonts/pt-sans/PT_SerifWebItalic.eot) format('embedded-opentype'), url(fonts/pt-sans/PT_SerifWebItalic.woff2) format('woff2'), url(fonts/pt-sans/PT_SerifWebItalic.woff) format('woff'), url(fonts/pt-sans/PT_SerifWebItalic.ttf) format('truetype'), url(fonts/pt-sans/PT_SerifWebItalic.svg#PT_SerifWebItalic) format('svg')
+}
+
+#select_ciudades,
+#select_ciudades2 {
+    overflow: hidden;
+    width: 350px;
+    height: 40px;
+    -moz-border-radius: 9px 9px 9px 9px;
+    -webkit-border-radius: 9px 9px 9px 9px;
+    border-radius: 9px 9px 9px 9px;
+    background: url(../images/arrow_down-2.png) no-repeat scroll 319px 14px #fff;
+    margin-left: 50px;
+    border: 2px solid #f03
+}
+
+#select_ciudades select,
+#select_ciudades2 select {
+    border: 0;
+    color: #eee;
+    background: 0 0;
+    font-size: 20px;
+    color: #000;
+    padding: 5px 10px;
+    width: 378px;
+    *width: 350px;
+    *background: #d2d2d2;
+    -webkit-appearance: none
+}
+
+#aviso-legal {
+    font-size: .8em
+}
+
+#privacidad {
+    font-size: .8em;
+    margin: 10px 20px;
+    float: right
+}
+
+#privacidad2 {
+    font-size: .8em;
+    margin: 5px 80px;
+    float: right
+}
+
+#privacidad2 a {
+    color: #f03
+}
+
+#privacidad3 {
+    font-size: .8em;
+    float: right;
+    width: 100%;
+    clear: both;
+    margin-top: 10px;
+    margin-right: 50px;
+    text-align: right
+}
+
+#privacidad4 {
+    font-size: .8em;
+    float: right;
+    width: 80%;
+    clear: both;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 20px;
+    text-align: right
+}
+
+#privacidad5 {
+    font-size: .8em;
+    float: right;
+    width: 80%;
+    clear: both;
+    margin-top: 0;
+    color: #686868
+}
+
+#aviso {
+    font-size: .9em;
+    margin: 10px 20px 20px 50px;
+    float: left;
+    max-width: 500px
+}
+
+#aviso-legal-container {
+    background: #fff;
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    padding: 40px;
+    font-size: .8em
+}
+
+#page>footer {
+    position: fixed;
+    bottom: 0
+}
+
+.hide {
+    display: none !important
+}
+
+#page>footer #copyright a {
+    padding-left: 10px
+}
+
+table.cookies {
+    max-width: 500px;
+    border-spacing: 0;
+    border-collapse: collapse
+}
+
+table.cookies,
+table.cookies th,
+table.cookies td {
+    border: 1px solid #666
+}
+
+table.cookies th,
+table.cookies td {
+    padding: 5px
+}
+
+table.cookies th {
+    background-color: #666;
+    color: #fff
+}
+
+@media screen and (max-width:639px) {
+    #aviso-legal-container {
+        padding: 2%
+    }
+
+    #aviso {
+        margin: 10px 20px
+    }
+}
+
+@media screen and (max-width:479px) {
+    #privacidad {
+        font-size: .7em
+    }
+}
+
+@media screen and (max-width:410px) {
+    #page>header img {
+        width: 105px;
+        margin: 1% 4% 0% 0%
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.cookies {
+    display: none;
+    font-size: .65em;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    padding: 5px 0;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    z-index: 10000000000
+}
+
+.cookies .cookies-content {
+    padding: 0 2%;
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.cookies .cookies-text {
+    float: left;
+    text-align: left;
+    padding: 4px 0
+}
+
+.cookies .cookies-text p {
+    padding: 0 !important
+}
+
+.cookies .cookies-buttons button {
+    border: 0;
+    color: #000;
+    padding: 4px;
+    background-color: #fff
+}
+
+.cookies .cookies-buttons button:before {
+    content: "DOORGAAN"
+}
+
+@media screen and (max-width:479px) {
+    .cookies {
+        font-size: .65em
+    }
+
+    .cookies .cookies-content {
+        position: relative;
+        overflow: hidden
+    }
+
+    .cookies .cookies-text {
+        float: left;
+        text-align: left;
+        padding: 4px 30px 4px 0
+    }
+
+    .cookies .cookies-buttons button {
+        position: absolute;
+        top: 0;
+        right: 4px;
+        cursor: pointer;
+        padding: 10px
+    }
+
+    .cookies .cookies-buttons button:before {
+        content: "X"
+    }
+}
+
+.ico-alert {
+    background: url(images/ico/ico-alert.png) center left no-repeat;
+    padding: 30px 40px
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article form .error-message {
+        margin: 0 0% 15px;
+        padding-left: 50px;
+        background: url(../images/ico/ico-alert.png) 10px 15px no-repeat
+    }
+
+    .ico-alert {
+        background: 0 0;
+        padding: 0
+    }
+}
+
+.red {
+    color: #f03
+}
+
+.black {
+    color: #000
+}
+
+.white {
+    color: #fff
+}
+
+.right {
+    text-align: right
+}
+
+.bg-red {
+    background-color: #f03
+}
+
+.border {
+    border: 1px solid;
+    color: #f03
+}
+
+.min {
+    font-size: .9em
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto
+}
+
+.popupOferta h1 {
+    font-size: 2em;
+    font-family: firasansregular;
+    margin: 0 0 .5em
+}
+
+.popupOferta h2 {
+    font-size: 1.75em;
+    font-family: firasansregular;
+    margin: 0 0 .25em
+}
+
+.popupOferta h3 {
+    font-size: 1.5em;
+    font-family: firasansregular;
+    margin: 0 0 .25em
+}
+
+.popupOferta h4 {
+    font-size: 1.25em;
+    padding: 0;
+    margin: 1em 0 .5em
+}
+
+.popupOferta .legal {
+    margin: 1em 0;
+    font-size: .7em
+}
+
+.mfp-ready.mfp-bg {
+    opacity: .6
+}
+
+.popupOferta {
+    position: relative;
+    width: 100%;
+    max-width: 43em;
+    margin: 1.25em auto
+}
+
+.popupOferta>div {
+    border-width: .3em;
+    border-radius: 1em;
+    background-color: #fff;
+    padding: 1.5em
+}
+
+.popupOferta ul {
+    list-style: none;
+    margin: 1em
+}
+
+.popupOferta li {
+    padding-left: 2em;
+    line-height: 1.75em;
+    background-image: url(../images/ico/checklist.png);
+    background-position: left 4px;
+    background-repeat: no-repeat;
+    font-size: 1.2em;
+    font-family: firasansregular
+}
+
+.popupOferta .legalText {
+    margin-left: 2em;
+    font-size: .7em;
+    color: #000
+}
+
+.popupOferta div button {
+    font-size: 1.2em;
+    padding: .5em 1em;
+    border: none;
+    background: #fb0d1b;
+    background: -moz-linear-gradient(top, #fb0d0d 0%, #ff0033 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fb0d1b), color-stop(100%, #ff0033));
+    background: -webkit-linear-gradient(top, #fb0d1b 0%, #ff0033 100%);
+    background: -o-linear-gradient(top, #fb0d0d 0%, #ff0033 100%);
+    background: -ms-linear-gradient(top, #fb0d0d 0%, #ff0033 100%);
+    background: linear-gradient(to bottom, #fb0d0d 0%, #ff0033 100%);
+    border-radius: .625em;
+    -moz-border-radius: .625em;
+    -webkit-border-radius: .625em;
+    cursor: pointer
+}
+
+.popupOferta div button:active,
+.popupOferta div button:focus {
+    outline: none
+}
+
+@media only screen and (max-width:650px) {
+    .wrapper {
+        width: 95%
+    }
+
+    .popupOferta {
+        font-size: 12px
+    }
+
+    .popupOferta ul {
+        margin: 0;
+        padding: 0
+    }
+
+    .popupOferta li {
+        padding-left: 1.75em;
+        line-height: 1.5em;
+        background-position: left 0
+    }
+}
+
+.ico-alert {
+    background: url(../images/ico/ico-alert.png) center left no-repeat;
+    padding: 30px 40px
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article form .error-message {
+        margin: 0 0% 15px;
+        padding-left: 50px;
+        background: url(../images/ico/ico-alert.png) 10px 15px no-repeat
+    }
+
+    .ico-alert {
+        background: 0 0;
+        padding: 0
+    }
+}
+
+.llamanos.mobile {
+    display: none
+}
+
+.llamanos.desktop {
+    display: none
+}
+
+.llamanos {
+    float: right;
+    width: 30%
+}
+
+.llamanos img {
+    float: right;
+    width: 50px;
+    padding-top: 1%
+}
+
+.llamanos p {
+    font-size: 17px;
+    margin-top: 2%;
+    color: #222;
+    margin-bottom: 0
+}
+
+.llamanos span {
+    font-size: 24px
+}
+
+.ico-alert {
+    background: url(images/ico/ico-alert.png) center left no-repeat;
+    padding: 30px 40px
+}
+
+@media screen and (max-width:768px) {
+    .llamanos.desktop {
+        display: none !important
+    }
+
+    .llamanos {
+        float: none;
+        width: 100%
+    }
+
+    .llamanos p {
+        display: inline
+    }
+
+    .llamanos img {
+        display: none
+    }
+
+    .llamanos span {
+        font-size: 20px
+    }
+}
+
+#txt_msg {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid #ababab;
+    margin: 0 0 20px;
+    color: #bf0411;
+    font-style: italic
+}
+
+.camp-fb .mfp-bg {
+    display: none
+}
+
+.camp-fb .mfp-wrap {
+    display: none
+}

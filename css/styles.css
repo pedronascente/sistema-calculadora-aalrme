@@ -1,0 +1,1661 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+
+html {
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    background: #ddd;
+    font-family: firasanslight
+}
+
+.upper {
+    text-transform: uppercase
+}
+
+#page>header {
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    padding: 20px 40px
+}
+
+#page>header:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+@media screen and (max-width:639px) {
+    #page>header {
+        border-bottom: none;
+        padding: 3% 2%
+    }
+}
+
+#page>header img {
+    margin: 0 20px 0 0;
+    height: 60px
+}
+
+@media screen and (max-width:639px) {
+    #page>header img {
+        width: 97px;
+        margin-right: 2%
+    }
+}
+
+#page>header #slogan {
+    font-weight: 700;
+    margin: 6px 0 0
+}
+
+@media screen and (max-width:639px) {
+    #page>header #slogan {
+        margin: 4px
+    }
+}
+
+#page>header #slogan strong {
+    font-size: 20px;
+    color: #6a6a6a;
+    display: block;
+    font-family: firasansregular
+}
+
+@media screen and (max-width:639px) {
+    #page>header #slogan strong {
+        font-size: 17px;
+        float: none
+    }
+}
+
+#page>header #slogan span {
+    color: #000;
+    font-size: 17px
+}
+
+#page>header #slogan span.slogan-mobile {
+    display: none;
+    font-size: 15px
+}
+
+@media screen and (max-width:750px) {
+    #page>header #slogan span {
+        display: none
+    }
+
+    #page>header #slogan span.slogan-mobile {
+        display: block
+    }
+}
+
+#page>header h1 {
+    float: right;
+    margin: 0;
+    color: #000
+}
+
+@media screen and (max-width:639px) {
+    #page>header h1 {
+        float: none;
+        font-size: 17px;
+        line-height: 17px
+    }
+}
+
+#page>header h1 strong {
+    font-size: 25px;
+    font-weight: 700;
+    float: right
+}
+
+@media screen and (max-width:639px) {
+    #page>header h1 strong {
+        font-size: 12px;
+        font-weight: 400;
+        float: none
+    }
+}
+
+#page>header h1 span {
+    font-size: 20px;
+    font-weight: 400;
+    float: right;
+    clear: both
+}
+
+@media screen and (max-width:639px) {
+    #page>header h1 span {
+        font-size: 12px;
+        float: none;
+        clear: none
+    }
+}
+
+#app-container {
+    background: #fff;
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    padding: 40px;
+    padding-top: 10px
+}
+
+@media screen and (max-width:639px) {
+    #app-container {
+        padding: 7% 0
+    }
+}
+
+#app-container nav {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #bdbdbd;
+    position: relative
+}
+
+#app-container nav:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+@media screen and (max-width:639px) {
+    #app-container nav {
+        margin: 7px 0
+    }
+}
+
+#app-container nav ul {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    background: #eaeaeb;
+    background: -moz-linear-gradient(top, #eaeaeb 0%, #eaeaeb 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eaeaeb), color-stop(100%, #eaeaeb));
+    background: -webkit-linear-gradient(top, #eaeaeb 0%, #eaeaeb 100%);
+    background: -o-linear-gradient(top, #eaeaeb 0%, #eaeaeb 100%);
+    background: -ms-linear-gradient(top, #eaeaeb 0%, #eaeaeb 100%);
+    background: linear-gradient(to bottom, #eaeaeb 0%, #eaeaeb 100%)
+}
+
+#app-container nav ul:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+#app-container nav ul.final {
+    background: #a0a0a0
+}
+
+#app-container nav ul li {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0 15px 0 42px;
+    background-color: transparent;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-image: url(../images/next.png)
+}
+
+@media screen and (max-width:639px) {
+    #app-container nav ul li {
+        background-position: -10px center;
+        padding: 4px 3% 4px 40px;
+        padding-left: 40px;
+        padding-left: calc(3% + 23px);
+        position: relative;
+        height: 20px
+    }
+}
+
+#app-container nav ul li.prev {
+    background-color: #727272;
+    background-image: url(../images/prev.png);
+    color: #fff
+}
+
+#app-container nav ul li.prev a {
+    color: #fff
+}
+
+#app-container nav ul li.current {
+    background-color: #a0a0a0;
+    background-image: url(../images/prev.png);
+    color: #fff
+}
+
+#app-container nav ul li.current a {
+    color: #fff
+}
+
+#app-container nav ul li.current a .order {
+    background-image: url(../images/order-active.png)
+}
+
+#app-container nav ul li.next {
+    background-image: url(../images/current.png)
+}
+
+#app-container nav ul li.first {
+    background-image: none;
+    padding-left: 15px
+}
+
+@media screen and (max-width:639px) {
+    #app-container nav ul li.first {
+        padding-left: 6%
+    }
+}
+
+@media screen and (max-width:639px) {
+    #app-container nav ul li.first .minified {
+        margin-left: 8%
+    }
+}
+
+#app-container nav ul li a {
+    display: block;
+    float: left;
+    color: #999;
+    text-decoration: none;
+    padding: 0;
+    font-family: firasansregular;
+    font-size: 18px;
+    background-color: transparent;
+    cursor: default
+}
+
+#app-container nav ul li a .order {
+    background: transparent url(../images/order.png) left top no-repeat;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 4px 10px 4px 0;
+    text-align: center
+}
+
+@media screen and (max-width:639px) {
+    #app-container nav ul li a .order {
+        margin: 0;
+        background-size: 100%;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        position: relative;
+        top: -9px
+    }
+}
+
+#app-container nav ul li a .complete {
+    font-family: firasansregular;
+    display: inline-block;
+    line-height: 48px;
+    vertical-align: top
+}
+
+@media screen and (max-width:999px) {
+    #app-container nav ul li a .complete {
+        display: none
+    }
+}
+
+#app-container nav ul li a .minified {
+    display: none
+}
+
+@media screen and (max-width:999px) {
+    #app-container nav ul li a .minified {
+        display: inline-block;
+        line-height: 48px;
+        vertical-align: top
+    }
+}
+
+@media screen and (max-width:639px) {
+    #app-container nav ul li a .minified {
+        font-family: firasansregular;
+        font-size: 14px;
+        position: absolute;
+        top: -24px;
+        left: 0;
+        line-height: 15px;
+        color: #999;
+        width: 100%;
+        text-align: center;
+        margin-left: 18%
+    }
+}
+
+#app-container nav #time {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 48px;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #999;
+    width: 80px;
+    min-width: 80px
+}
+
+@media screen and (max-width:999px) {
+    #app-container nav #time {
+        width: 15%
+    }
+}
+
+@media screen and (max-width:639px) {
+    #app-container nav #time {
+        height: 20px;
+        color: #fb0d1b
+    }
+}
+
+#app-container nav #time span {
+    vertical-align: top;
+    display: block
+}
+
+#app-container nav #time span#time-secs {
+    font-size: 35px;
+    margin-bottom: -5px;
+    height: 39px
+}
+
+#app-container nav #time span#time-secs:after {
+    content: "\""
+}
+
+@media screen and (min-width:340px) {
+    #app-container nav #time span#time-secs {
+        min-width: 60px
+    }
+}
+
+@media screen and (max-width:639px) {
+    #app-container nav #time span#time-secs {
+        line-height: 20px;
+        font-size: 18px;
+        padding: 0 3px
+    }
+
+    #app-container nav #time span#time-secs:after {
+        content: " Segundos";
+        font-size: 11px
+    }
+}
+
+#app-container nav #time span#time-text {
+    white-space: nowrap;
+    font-size: 11px
+}
+
+@media screen and (max-width:999px) {
+    #app-container nav #time span#time-text .complete {
+        display: none
+    }
+}
+
+#app-container nav #time span#time-text .minified {
+    display: none
+}
+
+@media screen and (max-width:999px) {
+    #app-container nav #time span#time-text .minified {
+        display: block
+    }
+}
+
+@media screen and (max-width:639px) {
+    #app-container nav #time span#time-text .minified {
+        display: block;
+        font-size: 10px;
+        position: absolute;
+        top: -19px;
+        right: 0;
+        line-height: 15px;
+        color: #999;
+        width: 100%;
+        text-align: center
+    }
+}
+
+#app-container nav #time span#time-final {
+    color: #fb0d1b;
+    font-size: 14px;
+    display: none
+}
+
+#app-container nav #time span#time-final .complete {
+    padding: 8px
+}
+
+@media screen and (max-width:999px) {
+    #app-container nav #time span#time-final .complete {
+        display: none
+    }
+}
+
+#app-container nav #time span#time-final .minified {
+    display: none
+}
+
+@media screen and (max-width:999px) {
+    #app-container nav #time span#time-final .minified {
+        display: block;
+        padding: 15px 5px
+    }
+}
+
+@media screen and (max-width:855px) {
+    #app-container nav #time span#time-final .minified {
+        padding: 7px 5px
+    }
+}
+
+#app-container #slides {
+    position: relative;
+    border-style: solid;
+    border-color: #ebebeb;
+    border-width: 0 1px 1px
+}
+
+#app-container #slides:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+#app-container #slides #cargando {
+    display: block;
+    background: transparent url(../images/loading.gif) center 70px no-repeat;
+    text-align: center;
+    font-size: 13px;
+    color: #999;
+    padding: 40px 50px 90px
+}
+
+#app-container #slides #calculando {
+    display: none;
+    background: transparent url(../images/loading.gif) center 70px no-repeat;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #999;
+    padding: 40px 50px 90px
+}
+
+#app-container #slides article {
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+
+#app-container #slides article h2 {
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+    padding: 0 50px;
+    margin: 30px 0
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article h2 {
+        font-size: 15px;
+        margin: 2% 0;
+        padding: 0 4%
+    }
+}
+
+#app-container #slides article p {
+    padding: 0 50px
+}
+
+#app-container #slides article form .input {
+    display: block;
+    margin: 0 0 10px;
+    padding: 7px 50px;
+    font-size: 25px
+}
+
+#app-container #slides article form .input label {
+    color: #999
+}
+
+#app-container #slides article form .input .subfields {
+    display: none
+}
+
+#app-container #slides article form .input .subfields.selected {
+    display: block
+}
+
+@media screen and (min-width:640px) {
+
+    #app-container #slides article form .text,
+    #app-container #slides article form .select {
+        text-align: center
+    }
+}
+
+@media screen and (max-width:639px) {
+
+    #app-container #slides article form .text,
+    #app-container #slides article form .select {
+        padding: 0 6%;
+        margin: 5px 0 0;
+        font-size: 17px
+    }
+
+    #app-container #slides article form .text:first-child,
+    #app-container #slides article form .select:first-child {
+        margin-top: 0
+    }
+}
+
+#app-container #slides article form .text input,
+#app-container #slides article form .select input {
+    font-family: firasansregular;
+    padding: 10px 20px;
+    border: 2px solid #8f8f90;
+    background-color: transparent;
+    padding: 8px 20px;
+    font-size: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+}
+
+#app-container #slides article form .text input.error,
+#app-container #slides article form .select input.error {
+    border-color: #c00
+}
+
+@media screen and (min-width:640px) {
+
+    #app-container #slides article form .text input,
+    #app-container #slides article form .select input {
+        text-align: left
+    }
+}
+
+@media screen and (max-width:639px) {
+
+    #app-container #slides article form .text input,
+    #app-container #slides article form .select input {
+        width: 100%;
+        font-size: 17px;
+        border-width: 1px;
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        text-align: center
+    }
+}
+
+#app-container #slides article form .text select,
+#app-container #slides article form .select select {
+    padding: 10px 20px;
+    border: 3px solid #8f8f90;
+    background-color: transparent;
+    padding: 8px 8px 8px 20px;
+    font-size: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+}
+
+#app-container #slides article form .text select.error,
+#app-container #slides article form .select select.error {
+    border-color: #c00
+}
+
+@media screen and (max-width:639px) {
+
+    #app-container #slides article form .text select,
+    #app-container #slides article form .select select {
+        width: 100%;
+        font-size: 17px;
+        border-width: 1px;
+        border-radius: 0;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0
+    }
+}
+
+#app-container #slides article form .text label,
+#app-container #slides article form .select label {
+    min-width: 110px;
+    display: inline-block
+}
+
+@media screen and (min-width:640px) {
+
+    #app-container #slides article form .text label,
+    #app-container #slides article form .select label {
+        text-align: left
+    }
+}
+
+@media screen and (max-width:639px) {
+
+    #app-container #slides article form .text label,
+    #app-container #slides article form .select label {
+        font-size: 17px
+    }
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article form .radio {
+        padding: 0;
+        margin: 0
+    }
+}
+
+#app-container #slides article form .radio input {
+    position: absolute;
+    left: -99999px
+}
+
+#app-container #slides article form .radio>label {
+    display: inline-block;
+    line-height: 48px;
+    padding-left: 63px;
+    background: transparent url(../images/radio-off.png) left center no-repeat;
+    cursor: pointer
+}
+
+#app-container #slides article form .radio>label.active {
+    background-image: url(../images/radio-on.png)
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article form .radio>label.active span {
+        background-image: url(../images/li-mobile-active.png)
+    }
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article form .radio>label {
+        background: #fff;
+        border-bottom: 1px solid #bdbdbd;
+        padding: 13px 45px 12px 4%;
+        margin: 0;
+        line-height: 20px;
+        font-size: 20px;
+        width: 100%;
+        position: relative
+    }
+
+    #app-container #slides article form .radio>label.active {
+        background: #f03;
+        border-top: 1px solid #fb0d1b;
+        border-bottom: 1px solid #fb0d1b;
+        color: #fff;
+        padding-top: 12px
+    }
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article form .radio>label span {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 2%;
+        top: 50%;
+        margin-top: -15px;
+        background: transparent url(../images/li-mobile.png) left top no-repeat
+    }
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article form .radio:first-child>label {
+        padding-top: 12px;
+        border-top: 1px solid #ddd
+    }
+
+    #app-container #slides article form .radio:first-child>label.active {
+        border-top: 1px solid #fb0d1b
+    }
+}
+
+@media screen and (min-width:640px) {
+    #app-container #slides article form .select {
+        text-align: left
+    }
+}
+
+#app-container #slides article form .submit {
+    font-family: firasansregular;
+    float: right;
+    clear: both;
+    margin: 20px 50px 0;
+    padding: 0;
+    background: 0 0;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article form .submit {
+        margin: 10px 6% 5px;
+        width: 88%
+    }
+}
+
+#app-container #slides article form .submit:hover {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 1px
+}
+
+#app-container #slides article form .submit input {
+    font-family: firasansregular;
+    color: #fff;
+    font-size: 22px;
+    margin: 0;
+    padding: 7px 20px;
+    border: none;
+    background: #fb0d1b;
+    background: -moz-linear-gradient(top, #fb0d1b 0%, #ff0033 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fb0d1b), color-stop(100%, #ff0033));
+    background: -webkit-linear-gradient(top, #fb0d1b 0%, #ff0033 100%);
+    background: -o-linear-gradient(top, #fb0d1b 0%, #ff0033 100%);
+    background: -ms-linear-gradient(top, #fb0d1b 0%, #ff0033 100%);
+    background: linear-gradient(to bottom, #fb0d1b 0%, #ff0033 100%);
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    cursor: pointer
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article form .submit input {
+        width: 100%;
+        padding: 3px 10px 3px 20px
+    }
+}
+
+#app-container #slides article form .submit input:hover {
+    background: #ab192d
+}
+
+#app-container #slides article form .submit input:active {
+    background: #fc3541;
+    background: -moz-linear-gradient(top, #fc3541 0%, #e50b17 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fc3541), color-stop(100%, #e50b17));
+    background: -webkit-linear-gradient(top, #fc3541 0%, #e50b17 100%);
+    background: -o-linear-gradient(top, #fc3541 0%, #e50b17 100%);
+    background: -ms-linear-gradient(top, #fc3541 0%, #e50b17 100%);
+    background: linear-gradient(to bottom, #fc3541 0%, #e50b17 100%)
+}
+
+#app-container #slides article form .error-message {
+    position: relative;
+    display: block;
+    margin: 0 50px 20px;
+    border: 2px solid #f03;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background: #fff;
+    color: #f03;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 700
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article form .error-message {
+        margin: 0 4% 15px
+    }
+}
+
+#app-container #slides article form .error-message .close-btn {
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-indent: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    background: transparent url(../images/close-msg.png) left top no-repeat;
+    cursor: pointer
+}
+
+#app-container #slides article form .error-message p {
+    margin: 5px 0 0;
+    padding: 0
+}
+
+#app-container #slides article form .error-message p:first-child {
+    margin-top: 0;
+    margin-right: 25px
+}
+
+#app-container #slides article.resultado>header {
+    padding: 0 0 20px
+}
+
+@media screen and (min-width:640px) {
+    #app-container #slides article.resultado>header {
+        padding-top: 20px;
+        border-top: 1px solid #ebebeb
+    }
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article.resultado>header {
+        padding-bottom: 0
+    }
+
+    #app-container #slides article.resultado>header:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0
+    }
+}
+
+#app-container #slides article.resultado>header img {
+    float: left;
+    margin: 0 2% 0 6%;
+    max-width: 30%
+}
+
+@media screen and (max-width:750px) {
+    #app-container #slides article.resultado>header img {
+        margin-bottom: 20px
+    }
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article.resultado>header img {
+        margin-bottom: 0
+    }
+}
+
+#app-container #slides article.resultado>header h2 {
+    clear: none;
+    display: block;
+    margin: 0 0 5px;
+    width: auto;
+    float: left;
+    padding: 0 4%
+}
+
+@media screen and (max-width:750px) {
+    #app-container #slides article.resultado>header h2 {
+        margin-top: 25px
+    }
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article.resultado>header h2 {
+        font-size: 15px;
+        width: 64%;
+        margin-top: 0
+    }
+}
+
+#app-container #slides article.resultado>header h2 strong {
+    text-transform: uppercase;
+    white-space: nowrap
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article.resultado>header h2 strong {
+        font-size: 17px
+    }
+}
+
+#app-container #slides article.resultado>header p {
+    display: inline-block;
+    font-size: 14px;
+    margin: 8px 0;
+    padding: 0 6%
+}
+
+@media screen and (min-width:640px) {
+    #app-container #slides article.resultado>header p {
+        float: right;
+        width: 50%;
+        position: relative;
+        top: 30px
+    }
+}
+
+#app-container #slides article.resultado>header p.mark {
+    display: inline-block;
+    margin: 5px 0 20px 4%;
+    padding: 10px 20px;
+    font-size: 21px;
+    float: none;
+    width: auto;
+    position: static
+}
+
+@media screen and (max-width:750px) {
+    #app-container #slides article.resultado>header p.mark {
+        clear: both;
+        display: block;
+        margin: 0 6%;
+        text-align: center
+    }
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article.resultado>header p.mark {
+        display: inline-block;
+        clear: none;
+        color: #fb0d1b;
+        float: left;
+        font-size: 14px;
+        margin: 0 4% 0 0;
+        padding: 0 4%;
+        width: 60%;
+        text-align: left
+    }
+}
+
+@media screen and (min-width:640px) {
+    #app-container #slides article.resultado>header p.mark {
+        border: 1px solid silver;
+        color: #c00;
+        background: #eaeaeb;
+        background: -moz-linear-gradient(top, #eaeaeb 0%, #cfcfd0 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eaeaeb), color-stop(100%, #cfcfd0));
+        background: -webkit-linear-gradient(top, #eaeaeb 0%, #cfcfd0 100%);
+        background: -o-linear-gradient(top, #eaeaeb 0%, #cfcfd0 100%);
+        background: -ms-linear-gradient(top, #eaeaeb 0%, #cfcfd0 100%);
+        background: linear-gradient(to bottom, #eaeaeb 0%, #cfcfd0 100%)
+    }
+}
+
+@media screen and (min-width:640px) {
+    #app-container #slides article.resultado .wrapper {
+        background: #ebebeb;
+        background: -moz-linear-gradient(top, #ebebeb 0%, #fff 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ebebeb), color-stop(100%, #fff));
+        background: -webkit-linear-gradient(top, #ebebeb 0%, #fff 100%);
+        background: -o-linear-gradient(top, #ebebeb 0%, #fff 100%);
+        background: -ms-linear-gradient(top, #ebebeb 0%, #fff 100%);
+        background: linear-gradient(to bottom, #ebebeb 0%, #ffffff 100%)
+    }
+
+    #app-container #slides article.resultado .wrapper:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0
+    }
+}
+
+#app-container #slides article.resultado .wrapper img {
+    display: block;
+    max-width: 98%;
+    margin: 0 auto;
+    clear: both
+}
+
+@media screen and (min-width:640px) {
+    #app-container #slides article.resultado .form-final {
+        width: 50%;
+        float: right;
+        clear: right;
+        margin-top: 30px
+    }
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article.resultado .form-final {
+        background: #fff;
+        background: -moz-linear-gradient(top, #fff 0%, #bdbdbd 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #bdbdbd));
+        background: -webkit-linear-gradient(top, #fff 0%, #bdbdbd 100%);
+        background: -o-linear-gradient(top, #fff 0%, #bdbdbd 100%);
+        background: -ms-linear-gradient(top, #fff 0%, #bdbdbd 100%);
+        background: linear-gradient(to bottom, #ffffff 0%, #bdbdbd 100%);
+        padding-bottom: 20px
+    }
+}
+
+#app-container #slides article.resultado .form-final p {
+    margin: 0;
+    padding: 0 15%;
+    width: 100%;
+    text-align: center
+}
+
+#app-container #slides article.resultado .form-final p strong {
+    display: inline-block;
+    color: #fb0d1b;
+    font-size: 60px;
+    line-height: 60px
+}
+
+#app-container #slides article.resultado .form-final p span {
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 25px
+}
+
+#app-container #slides article.resultado .form-final form {
+    padding: 0 6%;
+    width: 100%;
+    margin: 10px 0 0
+}
+
+@media screen and (min-width:640px) {
+    #app-container #slides article.resultado .form-final form .input {
+        margin-bottom: 0;
+        padding: 0 50px;
+        width: 100%
+    }
+}
+
+#app-container #slides article.resultado .form-final form .input input {
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    border: 3px solid #bdbdbd;
+    box-shadow: inset 0 0 7px 0 #bdbdbd;
+    -moz-box-shadow: inset 0 0 7px 0 #bdbdbd;
+    -webkit-box-shadow: inset 0 0 7px 0 #bdbdbd;
+    color: #494949;
+    background: #fff;
+    text-align: center
+}
+
+@media screen and (min-width:640px) {
+    #app-container #slides article.resultado .form-final form .input input {
+        width: 100%
+    }
+}
+
+#app-container #slides article.resultado .form-final form .submit {
+    margin: 0;
+    padding: 0 6%;
+    background: 0 0;
+    float: none;
+    display: block;
+    width: 100%;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none
+}
+
+#app-container #slides article.resultado .form-final form .submit:hover {
+    position: static;
+    top: 0
+}
+
+@media screen and (min-width:640px) {
+    #app-container #slides article.resultado .form-final form .submit {
+        margin-bottom: 0;
+        padding: 0 50px
+    }
+}
+
+#app-container #slides article.resultado .form-final form .submit input {
+    border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: 3px solid #fb0d1b;
+    padding: 5px 0
+}
+
+@media screen and (min-width:640px) {
+    #app-container #slides article.resultado .form-final form .submit input {
+        width: 100%
+    }
+}
+
+@media screen and (min-width:640px) {
+    #app-container #slides article.resultado aside {
+        width: 50%;
+        float: left;
+        margin-top: -30px
+    }
+}
+
+@media screen and (max-width:790px) {
+    #app-container #slides article.resultado aside {
+        margin-top: -44px
+    }
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article.resultado aside {
+        margin-top: 0
+    }
+}
+
+#app-container #slides article.resultado aside p {
+    text-align: center;
+    padding: 0;
+    font-size: 20px
+}
+
+@media screen and (min-width:640px) {
+    #app-container #slides article.resultado aside p {
+        padding-left: 15%;
+        text-align: left
+    }
+}
+
+#app-container #slides article.resultado aside ul {
+    padding: 0 5% 0 15%;
+    display: block;
+    list-style: none
+}
+
+#app-container #slides article.resultado aside ul li {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px
+}
+
+@media screen and (max-width:639px) {
+    body.final #app-container {
+        border-top: 1px solid #bdbdbd
+    }
+}
+
+@media screen and (max-width:639px) {
+    body.final #app-container nav {
+        display: none
+    }
+}
+
+body.final #app-container #slides.resultado {
+    text-align: left;
+    padding-top: 30px
+}
+
+body.final #app-container #slides.resultado h2 {
+    display: inline-block;
+    margin-top: 17px;
+    margin-bottom: 0;
+    width: 50%
+}
+
+body.final #app-container #slides.resultado .image {
+    float: right;
+    width: 190px
+}
+
+body.final #app-container #slides.resultado .image img {
+    float: left;
+    margin-right: 10px
+}
+
+body.final #app-container #slides.resultado .image span {
+    float: left;
+    line-height: 35px;
+    white-space: nowrap;
+    font-size: 10px;
+    color: #999
+}
+
+body.final #app-container #slides.resultado .mark {
+    display: inline-block;
+    border: 1px solid silver;
+    color: #c00;
+    font-size: 25px;
+    margin: 20px 0 20px 50px;
+    padding: 10px 20px;
+    background: #eaeaeb;
+    background: -moz-linear-gradient(top, #eaeaeb 0%, #cfcfd0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eaeaeb), color-stop(100%, #cfcfd0));
+    background: -webkit-linear-gradient(top, #eaeaeb 0%, #cfcfd0 100%);
+    background: -o-linear-gradient(top, #eaeaeb 0%, #cfcfd0 100%);
+    background: -ms-linear-gradient(top, #eaeaeb 0%, #cfcfd0 100%);
+    background: linear-gradient(to bottom, #eaeaeb 0%, #cfcfd0 100%)
+}
+
+body.final #app-container #slides.resultado aside {
+    padding: 30px 0;
+    clear: both;
+    background: #eaeaeb;
+    background: -moz-linear-gradient(top, #eaeaeb 0%, #fff 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eaeaeb), color-stop(50%, #fff));
+    background: -webkit-linear-gradient(top, #eaeaeb 0%, #fff 50%);
+    background: -o-linear-gradient(top, #eaeaeb 0%, #fff 50%);
+    background: -ms-linear-gradient(top, #eaeaeb 0%, #fff 50%);
+    background: linear-gradient(to bottom, #eaeaeb 0%, #ffffff 50%)
+}
+
+body.final #app-container #slides.resultado aside p {
+    width: 50%;
+    font-size: 18px;
+    margin: 12px 0;
+    display: inline-block
+}
+
+body.final #app-container #slides.resultado aside ul {
+    width: 50%;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 50px
+}
+
+body.final #app-container #slides.resultado aside ul li {
+    padding-left: 15px;
+    background: transparent url(../images/li.png) left center no-repeat;
+    font-size: 15px;
+    margin-bottom: 7px
+}
+
+body.final #app-container #slides.resultado aside .form {
+    width: 50%;
+    float: right;
+    width: 50%;
+    padding: 0 10.8% 0 8.6%
+}
+
+body.final #app-container #slides.resultado aside .form .input {
+    width: 100%;
+    padding: 0
+}
+
+body.final #app-container #slides.resultado aside .form .text input {
+    text-align: center;
+    width: 100%
+}
+
+body.final #app-container #slides.resultado aside .form .submit {
+    margin: 0;
+    width: 100%;
+    background-image: none;
+    padding: 0
+}
+
+body.final #app-container #slides.resultado aside .form .submit input {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 7px 10px;
+    border: 2px solid #fc0d1b
+}
+
+body.final #app-container #slides.resultado aside #precio {
+    color: #c00;
+    display: inline-block;
+    font-size: 85px
+}
+
+body.final #app-container #slides.resultado aside #info-precio {
+    display: inline-block;
+    font-size: 15px
+}
+
+body.final #app-container #slides.resultado aside img {
+    display: block;
+    margin: 0 auto;
+    width: 94%
+}
+
+#app-container #slides article#slide-8 form .text,
+#app-container #slides article#slide-19 form .text {
+    text-align: left
+}
+
+#app-container #slides article#error h2 {
+    font-weight: 700
+}
+
+#app-container #slides article#error p {
+    border: 2px solid #f03;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background: #fff;
+    color: #f03;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 50px 20px
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article#error p {
+        margin: 0 4% 1em
+    }
+}
+
+#app-container #slides article#error p.boton {
+    float: left;
+    clear: both;
+    border: none;
+    padding: 0;
+    background: 0 0;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+}
+
+#app-container #slides article#error p.boton:hover {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    position: relative;
+    top: 1px
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article#error p.boton {
+        margin: 10px 6% 5px;
+        width: 88%
+    }
+}
+
+#app-container #slides article#error p.boton a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    padding: 7px 20px;
+    border: none;
+    background: #bdbdbd;
+    background: -moz-linear-gradient(top, #bdbdbd 0%, #494949 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bdbdbd), color-stop(100%, #494949));
+    background: -webkit-linear-gradient(top, #bdbdbd 0%, #494949 100%);
+    background: -o-linear-gradient(top, #bdbdbd 0%, #494949 100%);
+    background: -ms-linear-gradient(top, #bdbdbd 0%, #494949 100%);
+    background: linear-gradient(to bottom, #bdbdbd 0%, #494949 100%);
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: inset 1px 1px 1px 0 #d7d7d7;
+    -moz-box-shadow: inset 1px 1px 1px 0 #d7d7d7;
+    -webkit-box-shadow: inset 1px 1px 1px 0 #d7d7d7;
+    cursor: pointer
+}
+
+@media screen and (max-width:639px) {
+    #app-container #slides article#error p.boton a {
+        width: 100%;
+        padding: 5px 10px
+    }
+}
+
+#app-container #slides article#error p.boton a:hover {
+    box-shadow: inset 1px 1px 1px 0 #2f2f2f;
+    -moz-box-shadow: inset 1px 1px 1px 0 #2f2f2f;
+    -webkit-box-shadow: inset 1px 1px 1px 0 #2f2f2f;
+    background: #b0b0b0;
+    background: -moz-linear-gradient(top, #b0b0b0 0%, #3c3c3c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b0b0b0), color-stop(100%, #3c3c3c));
+    background: -webkit-linear-gradient(top, #b0b0b0 0%, #3c3c3c 100%);
+    background: -o-linear-gradient(top, #b0b0b0 0%, #3c3c3c 100%);
+    background: -ms-linear-gradient(top, #b0b0b0 0%, #3c3c3c 100%);
+    background: linear-gradient(to bottom, #b0b0b0 0%, #3c3c3c 100%)
+}
+
+#app-container #slides article#error p.boton a:active {
+    background: #d1d1d1;
+    background: -moz-linear-gradient(top, #d1d1d1 0%, #5d5d5d 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d1d1d1), color-stop(100%, #5d5d5d));
+    background: -webkit-linear-gradient(top, #d1d1d1 0%, #5d5d5d 100%);
+    background: -o-linear-gradient(top, #d1d1d1 0%, #5d5d5d 100%);
+    background: -ms-linear-gradient(top, #d1d1d1 0%, #5d5d5d 100%);
+    background: linear-gradient(to bottom, #d1d1d1 0%, #5d5d5d 100%)
+}
+
+iframe {
+    display: none;
+    border: none;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: -1px;
+    left: -1px
+}
+
+iframe.popup {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .4)
+}
+
+.close-trigger {
+    position: fixed;
+    z-index: 100;
+    right: 20px;
+    top: 20px;
+    display: block;
+    color: transparent;
+    width: 20px;
+    height: 20px;
+    background: transparent url(/images/close.png) center center no-repeat
+}
+
+@media screen and (width:1024px) and (max-height:768px) {
+    #app-container {
+        padding-top: 20px;
+        padding-bottom: 20px
+    }
+
+    #app-container #slides article h2 {
+        margin-top: 15px;
+        margin-bottom: 15px
+    }
+
+    #app-container #slides article form .radio {
+        padding-top: 0;
+        padding-bottom: 0
+    }
+
+    #app-container #slides article form .radio label {
+        background-size: 40px
+    }
+
+    #app-container #slides article form .submit {
+        margin-top: 10px
+    }
+}
+
+.lang-pt #app-container nav #time span#time-final .complete {
+    padding: 9px 3px
+}
+
+.lang-pt #app-container nav #time span#time-final .minified {
+    padding: 9px 5px
+}
+
+#page>footer {
+    width: 100%;
+    font-size: 11px;
+    color: #fff;
+    background: #494949;
+    padding: 20px 0
+}
+
+#page>footer:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+@media screen and (max-width:639px) {
+    #page>footer {
+        padding: 1% 2%
+    }
+}
+
+#page>footer>div {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0
+}
+
+#page>footer img {
+    float: left;
+    max-width: 15%
+}
+
+#page>footer img#verisure {
+    float: right
+}
+
+@media screen and (max-width:479px) {
+    #page>footer img#verisure {
+        display: none
+    }
+}
+
+#page>footer #copyright {
+    float: left;
+    margin: 13.5px 0 0 2%
+}
+
+@media screen and (max-width:479px) {
+    #page>footer #copyright {
+        margin-top: 0
+    }
+}
+
+#page>footer #copyright span {
+    float: left
+}
+
+#page>footer #copyright span:after {
+    content: " "
+}
+
+@media screen and (max-width:479px) {
+    #page>footer #copyright span:after {
+        content: ""
+    }
+}
+
+#page>footer #copyright a {
+    float: left;
+    color: #fff
+}
+
+@media screen and (max-width:479px) {
+    #page>footer #copyright a {
+        clear: both
+    }
+}
+
+#aviso-legal {
+    font-size: .8em
+}
+
+.mfp-ready .popup-footer {
+    padding: 40px;
+    font-family: firasanslight
+}
+
+.mfp-ready .popup-footer li {
+    margin-bottom: 10px
+}
+
+.ddd-text {
+    font-size: 12px;
+    padding: 0 !important
+}
+
+.ddd-no {
+    display: none
+}
+
+.tkp-ddd--no .ddd-yes,
+.tkp-ddd--no #app-container #slides .eds {
+    display: none
+}
+
+.tkp-ddd--no .ddd-no {
+    display: block
+}
+
+.tkp-ddd--no #app-container #slides .security.eds,
+.tkp-ddd--no #app-container #slides .thanks.eds,
+.tkp-ddd--no #app-container #slides .burglars.eds {
+    display: inline-block
+}
+
+.tkp-ddd--no #app-container #slides .thanks.eds .table-cell {
+    background-color: rgba(255, 0, 0, .6)
+}
